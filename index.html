@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | TextEditor</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="func.js"></script>
+    <div id="parent">
+        <div id="form">
+            Font Family <select id="fontfamily" name="fontfamily"> 
+                <option value="None">--None--</option>
+                <option value="Blackadder ITC">Blackadder ITC</option>
+                <option value="Open Sans">Open Sans</option>
+            </select>
+            Variant <select id= "Variant" name="Variant"> 
+                <option value="None">--None--</option>
+                <option value="Bold">Bold</option>
+                <option value="Underline">Underline</option>
+            </select>
+            <input type="radio" name="Italic">Italic
+            <br>
+            <textarea name="text" id="text" cols="150" rows="30"></textarea><br>
+            <div  id="buttons">
+
+            <input type="button" value="Reset" onclick="reset()">
+            <input type="button" value="Save" onclick="save()">
+            </div>
+
+        </div>
+    </div>     
+</body>
+</html>
